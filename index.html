@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+      <!-- header -->
+        <header>
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="IMG/Logo.png" alt="Logo" class="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-1 gap-md-5">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">support</a>
+                  </li>
+                </ul>
+                <button class="btn btn-dark text-light px-4" type="submit">Search</button>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+      <!-- Hero -->
+        <main class="my-5 position-relative">
+          <div class="hero w-100 w-md-75">
+            <h2>Interior Design</h2>
+            <p>Step into a world where the art of Interior Design is meticulously crafted to bring together timeless elegance and cutting-edge 
+              modern Innovation, Allowing you to transform your living spaces into the epitome of luxury and sophistication</p>
+            <button class="btn btn-dark text-uppercase px-4 py-2 my-5">start project</button>
+            <div class="d-flex gap-5 my-5">
+              <div>
+                <h5 class="fs-1 m-0 text-secondary">400+</h5>
+                <p class="p-0 text-secondary text-capitalize">project complete</p>
+              </div>
+              <div>
+                <h5 class="fs-1 m-0 text-secondary">600+</h5>
+                <p class="p-0 text-secondary text-capitalize">satisfied clients</p>
+              </div>
+              <div>
+                <h5 class="fs-1 m-0 text-secondary">100+</h5>
+                <p class="p-0 text-secondary text-capitalize">unique styles</p>
+              </div>
+            </div>
+          </div>
+          <img class="hero-img1 d-none d-lg-block" src="IMG/hero1.png" alt="">
+          <img class="hero-img2 d-none d-lg-block" src="IMG/hero2.png" alt="">
+          <div class="mrb3 d-none d-lg-block"></div>
+          <div class="down d-none d-lg-block">
+            <svg width="24" height="40" viewBox="0 0 24 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.5 2C13.5 1.17157 12.8284 0.5 12 0.5C11.1716 0.5 10.5 1.17157 10.5 2L13.5 2ZM10.9393 58.0607C11.5251 58.6464 12.4749 58.6464 13.0607 58.0607L22.6066 48.5147C23.1924 47.9289 23.1924 46.9792 22.6066 46.3934C22.0208 45.8076 21.0711 45.8076 20.4853 46.3934L12 54.8787L3.51472 46.3934C2.92893 45.8076 1.97918 45.8076 1.3934 46.3934C0.807609 46.9792 0.807609 47.9289 1.3934 48.5147L10.9393 58.0607ZM10.5 2L10.5 57L13.5 57L13.5 2L10.5 2Z" fill="white"/>
+            </svg>                         
+          </div>
+        </main>
+
+      <!-- services -->
+        <section class="my-5 py-5">
+          <div class="services w-100">
+            <h2 class="text-uppercase fs-1 fw-bold my-5"><hr> Our Services</h2>
+            <div class="d-flex flex-wrap flex-lg-nowrap gap-3">
+              <div class="d-flex gap-3 align-items-flex-start">
+                <svg width="72" height="50" viewBox="0 0 72 70" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <rect width="72" height="70" fill="url(#pattern0_1_50)"/>
+                  <defs>
+                  <pattern id="pattern0_1_50" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#image0_1_50" transform="scale(0.0138889 0.0142857)"/>
+                  </pattern>
+                  <image id="image0_1_50" width="72" height="70" xlink:href="data:image/png;base64,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"/>
+                  </defs>
+                </svg>                    
+                <div class="w-75">
+                  <h5 class="fs-4 fw-bold mb-4 text-secondary">Lighting Design</h5>
+                  <p>Achieve the perfect balance of ambient, task, and accent lighting for a functional atmosphere</p>
+                </div>
+              </div>
+              <div class="d-flex gap-3 align-items-flex-start">
+                <svg width="72" height="50" viewBox="0 0 72 70" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <rect width="72" height="70" fill="url(#pattern0_1_52)"/>
+                  <defs>
+                  <pattern id="pattern0_1_52" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#image0_1_52" transform="scale(0.0138889 0.0142857)"/>
+                  </pattern>
+                  <image id="image0_1_52" width="72" height="70" xlink:href="data:image/png;base64,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"/>
+                  </defs>
+                </svg>                    
+                <div class="w-75">
+                  <h5 class="fs-4 fw-bold mb-4 text-secondary">Interior Design</h5>
+                  <p>From concept to completion, we oversee every detail to bring your vision to life efficiently</p>
+                </div>
+              </div>
+              <div class="d-flex gap-3 align-items-flex-start">
+                <svg width="72" height="50" viewBox="0 0 72 70" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <rect width="72" height="70" fill="url(#pattern0_1_51)"/>
+                  <defs>
+                  <pattern id="pattern0_1_51" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#image0_1_51" transform="scale(0.0138889 0.0142857)"/>
+                  </pattern>
+                  <image id="image0_1_51" width="72" height="70" xlink:href="data:image/png;base64,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"/>
+                  </defs>
+                </svg>                    
+                <div class="w-75">
+                  <h5 class="fs-4 fw-bold mb-4 text-secondary">Outdoor Design</h5>
+                  <p>Celebrate the changing seasons with our seasonal outdoor decor services</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      <!-- Designing -->
+        <section class="mt-5 pt-5">
+          <div class="d-flex gap-5">
+            <div class="col-5 d-none d-lg-block">
+              <img src="IMG/Designing.png" alt="Designing" class="w-100 h-75">
+            </div>
+            <div class="col-12 col-lg-7">
+              <h2 class="fs-1 fw-bold mb-5">Designing Your Dream With Brilliance</h2>
+              <p class="fs-5 mb-5">Elevate your spaces with bespoke interior designs that reflect your unique style and aspirations, crafted with precision and brilliance for an unforgettable living experience</p>
+              <div class="d-flex justify-content-between border-bottom mb-3">
+                <h6 class="fs-4 fw-bold">Living Room Interior Design</h6>
+                <h6 class="fs-4 fw-bold">+</h6>
+              </div>
+              <div class="d-flex justify-content-between border-bottom mb-5">
+                <h6 class="fs-4 fw-bold">Living Room Interior Design</h6>
+                <h6 class="fs-4 fw-bold">+</h6>
+              </div>
+              <button class="btn btn-dark py-2 px-4">learn more</button>
+            </div>
+          </div>
+        </section>
+
+      <!-- Steps -->
+        <section class="mb-5 pb-5">
+          <div class="d-flex gap-5">
+            <div class="col-12 col-lg-7">
+              <h2 class="fs-1 fw-bold mb-5">Designing Your Dream in Three Simple Steps</h2>
+              <div class="d-flex gap-3">
+                <div class="Steps-icon">
+                  <img src="IMG/لقطة شاشة 2024-09-11 194844.png" style="height: 35px; width: 35px;" alt="">
+                  <div class="I"></div>
+                </div>
+                <div class="Steps-info">
+                  <h6 class="fs-4 fw-bold mb-4">Start Project</h6>
+                  <p class="fs-5">Embark on your design adventure by initiating your project. Share your vision and set the stage for a bespoke design experience</p>
+                </div>
+              </div>
+              <div class="d-flex gap-3">
+                <div class="Steps-icon">
+                  <img src="IMG/لقطة شاشة 2024-09-11 193807.png" style="height: 35px; width: 35px;" alt="">
+                  <div class="I"></div>
+                </div>
+                <div class="Steps-info">
+                  <h6 class="fs-4 fw-bold mb-4">Craft</h6>
+                  <p class="fs-5">Collaborate closely to achieve design excellence refining your vision and crafting brilliance into every aspect of your space</p>
+                </div>
+              </div>
+              <div class="d-flex gap-3">
+                <div class="Steps-icon">
+                  <img src="IMG/لقطة شاشة 2024-09-11 193823.png" style="height: 35px; width: 35px;" alt="">
+                  <div class="I"></div>
+                </div>
+                <div class="Steps-info">
+                  <h6 class="fs-4 fw-bold mb-4">Execute</h6>
+                  <p class="fs-5">Witness your vision becoming a reality as we execute the design plan with precision. Celebrate the joy of your newly transformed space</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-5 d-none d-lg-block">
+              <img src="IMG/steps.png" alt="Steps" class="w-100 h-100">
+            </div>
+          </div>
+        </section>
+
+      <!-- Customers -->
+       <section class="position-relative my-5">
+        <div class="d-flex gap-5 ">
+          <div class="Customers-img col-6 d-lg-block d-none">
+            <img src="IMG/Customers.png" alt="Customers" class="w-100 h-75">
+          </div>
+          <div class="Customers-info col-12 col-lg-6">
+            <h2 class="fs-1 fw-bold mb-5">What Our Customers Say About Us</h2>
+            <div class="Customers-item d-block d-lg-flex flex-row-reverse justify-content-between">
+              <div class="Customers-card p-4 d-flex flex-column justify-content-between bg-dark text-light">
+                <h2>“</h2>
+                <p>Exceptional service! From the initial consultation to the final reveal, your team demonstrated professionalism and a keen eye for design. Highly recommend!</p>
+                <div class="d-flex align-items-center gap-3 mt-5">
+                  <img src="./IMG/Mask group (2).png" alt="User">
+                  <div class="User-info">
+                    <h6 class="m-0 fs-5">James Bennett</h6>
+                    <p class="m-0">Toronto, Canada</p>
+                  </div>
+                </div>
+              </div>
+              <div class="Customers-card p-4 d-none d-lg-flex flex-column justify-content-between bg-dark text-light">
+                <h2>“</h2>
+                <p>Working with your design team was an absolute pleasure. The attention to detail and creativity exceeded my expectations.  Thank you for making my home beautiful!</p>
+                <div class="d-flex align-items-center gap-3 mt-5">
+                  <img src="./IMG/Mask group (2).png" alt="User">
+                  <div class="User-info">
+                    <h6 class="m-0 fs-5">Sophie Carter</h6>
+                    <p class="m-0">New York, USA</p>
+                  </div>
+                </div>
+              </div>
+              <div class="arrow align-self-end d-flex pt-4 gap-5">
+                <svg width="35" height="30" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.93934 10.9393C0.353553 11.5251 0.353553 12.4749 0.93934 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.93934 10.9393ZM28 13.5C28.8284 13.5 29.5 12.8284 29.5 12C29.5 11.1716 28.8284 10.5 28 10.5V13.5ZM2 13.5H28V10.5H2V13.5Z" fill="#464646"/>
+                </svg>
+                <svg width="35" height="30" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM29.0607 13.0607C29.6464 12.4749 29.6464 11.5251 29.0607 10.9393L19.5147 1.3934C18.9289 0.807611 17.9792 0.807611 17.3934 1.3934C16.8076 1.97919 16.8076 2.92893 17.3934 3.51472L25.8787 12L17.3934 20.4853C16.8076 21.0711 16.8076 22.0208 17.3934 22.6066C17.9792 23.1924 18.9289 23.1924 19.5147 22.6066L29.0607 13.0607ZM2 13.5H28V10.5H2V13.5Z" fill="#464646"/>
+                </svg>                              
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
+
+      <!-- Newsletter -->
+        <section class="Newsletter d-flex flex-column align-items-center position-relative pb-5">
+          <div class="Newsletter-info text-center py-3">
+            <h2 class="fs-1 fw-bold mb-4">Subscribe to Our Newsletter for Design Insights</h2>
+            <p class="px-5">Be the first to discover trends, inspirations, and special offers as we bring the world of design directly to your inbox</p>
+          </div>
+          <form class="position-absolute" action="">
+            <input class="" type="email" placeholder="Enter your email address">
+            <button>subscribe</button>
+          </form>
+        </section>
+
+      </div>
+      <!-- Footer -->
+      <footer class="bg-dark d-flex justify-content-center text-light py-5">
+      <div class="col-lg-2 col-12 me-lg-5 text-lg-start text-center">
+        <img src="./IMG/Logo.png" alt="logo" class="pb-5">
+        <p>VivaDecor your premier destination for luxury and modern interior design</p>
+        <div class="socail d-flex gap-3 justify-content-center">
+          <svg width="24" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 2H10C8.6739 2 7.4021 2.52678 6.4645 3.46447C5.52678 4.40215 5 5.67392 5 7V10H2V14H5V22H9V14H12L13 10H9V7C9 6.73478 9.1054 6.48043 9.2929 6.29289C9.4804 6.10536 9.7348 6 10 6H13V2Z" stroke="white" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <svg width="24" height="24" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24.069 2.01009C24.069 2.01009 22.0448 3.20594 20.9191 3.54489C20.315 2.85023 19.512 2.35787 18.619 2.1344C17.7259 1.91094 16.7857 1.96715 15.9256 2.29543C15.0655 2.62372 14.3269 3.20824 13.8099 3.96993C13.2928 4.73163 13.0222 5.63375 13.0345 6.5543V7.55743C11.2716 7.60314 9.52479 7.21216 7.94961 6.41932C6.37442 5.62647 5.01976 4.45637 4.00627 3.01323C4.00627 3.01323 -0.00627232 12.0415 9.02195 16.054C6.95602 17.4563 4.49496 18.1595 2 18.0603C11.0282 23.076 22.0627 18.0603 22.0627 6.5242C22.0618 6.24478 22.0349 5.96605 21.9825 5.6916C23.0063 4.68193 24.069 2.01009 24.069 2.01009Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 16.4446C14.4545 16.4446 16.4444 14.4547 16.4444 12.0001C16.4444 9.54551 14.4545 7.55566 12 7.55566C9.54539 7.55566 7.55554 9.54551 7.55554 12.0001C7.55554 14.4547 9.54539 16.4446 12 16.4446Z" stroke="white" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 16.4444V7.55556C2 4.48731 4.48731 2 7.55556 2H16.4444C19.5127 2 22 4.48731 22 7.55556V16.4444C22 19.5127 19.5127 22 16.4444 22H7.55556C4.48731 22 2 19.5127 2 16.4444Z" stroke="white" stroke-width="2.5"/>
+            <path d="M18.1111 5.90071L18.1228 5.8877" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>     
+          <svg width="24" height="24" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <mask id="mask0_1_181" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="22">
+            <rect width="22" height="22" fill="url(#pattern0_1_181)"/>
+            </mask>
+            <g mask="url(#mask0_1_181)">
+            <rect x="-3" y="-3" width="28" height="28" fill="white"/>
+            </g>
+            <defs>
+            <pattern id="pattern0_1_181" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_1_181" transform="scale(0.00195312)"/>
+            </pattern>
+            <image id="image0_1_181" width="512" height="512" xlink:href="data:image/png;base64,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AADAAikAALBACgAALJACAAALpAAAwAIpAACwQAoAACyQAgAAC6QAAMACKQAAsEAKAAAskAIAAAukAADAAikAALBACgAALJACAAALpAAAwAIpAACwQAoAACyQAgAAC6QAAMACKQAAsEAKAAAskAIAAAukAADAAikAALBACgAALJACAAALpAAAwAIpAACwQAoAACyQAgAAC6QAAMACKQAAsEAKAAAskAIAAAukAADAAikAALBACgAALJACAAALpAAAwAIpAACwQAoAACyQAgAAC6QAAMACKQAAsEAKAAAskAIAAAukAADAAikAALBACgAALJACAAALpAAAwAIpAACwQAoAACyQAgAAC6QAAMACKQAAsEAKAAAskAIAAAukAADAAikAALBACgAALJACAAALpAAAwAIpAACwQAoAACyQAgAAC6QAAMACKQAAsEAKAAAskAIAAAukAADAAikAALBACgAALJACAAALpAAAwAIpAACwQAoAACyQAgAAC6QAAMACKQAAsEAKAAAskAIAAAukAADAAikAALBACgAALJACAAALpAAAwAIpAACwQAoAACyQAgAAC6QAAMACKQAAsEAKAAAskAIAAAukAADAAikAALBACgAALJACAAALpAAAwAIpAACwQAoAACyQAgAAC6QAAMACKQAAsEAKAAAskAIAAAukAADAAikAALBACgAALJACAAALpAAAwAIpAACwQAoAACyQAgAAC6QAAMACKQAAsEAKAAAskAIAAAukAADAAikAALBACgAALJACAAALpAAAwAIpAACwQAoAACyQAgAAC/T/ATy2LnwFUzNHAAAAAElFTkSuQmCC"/>
+            </defs>
+          </svg>                                       
+        </div>
+      </div>
+      <div class="col-2 ms-5 d-none d-lg-block">
+        <h6>Our Services</h6>
+        <ul class="p-0">
+          <li>Interior design</li>
+          <li>Outdoor design</li>
+          <li>Lightning design</li>
+          <li>Office design</li>
+        </ul>
+      </div>
+      <div class="col-2 d-none d-lg-block">
+        <h6>Our Services</h6>
+        <ul class="p-0">
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Press inquires</a></li>
+        </ul>
+      </div>
+      <div class="col-2 d-none d-lg-block">
+        <h6>Our Services</h6>
+        <ul class="p-0">
+          <li>info@vivadecor.com</li>
+          <li>Design Avenue Cityville, CA 90210 United States</li>
+        </ul>
+      </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

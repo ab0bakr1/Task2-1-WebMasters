@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header */
+header a{
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+/* hero */
+.hero h2{
+    font-size: clamp(4.5rem,6vw,7rem);
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+.hero p{
+    font-size: clamp(1rem,1.1vw,1.5rem);
+    font-weight: 400;
+    padding-right: 50%;
+}
+.hero-img1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 45%;
+}
+.hero-img2{
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    width: 30%;
+    height: 45%;
+    z-index: 3;
+}
+.mrb3{
+    background-color: transparent;
+    border: 2px solid #000;
+    padding: 70px;
+    position: absolute;
+    top: 50%;
+    right: 30%;
+}
+.down{
+    background-color: #1F1F1F;
+    border: none;
+    padding: 20px 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 4;
+}
+@media (max-width:992px) {
+    .hero p{
+        padding-right: 0;
+    }
+}
+/* services */
+.services h2 hr{
+    border: 1px solid #000;
+    width: 100px;
+    display: inline-block;
+}
+
+/* Steps */
+.Steps-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.Steps-icon img{
+    background-color: rgba(31, 31, 31, 1);
+    padding: 5px;
+    border-radius: 50%;
+}
+.Steps-icon .I{
+    border: none;
+    border-left: rgba(155, 155, 155, 1) solid 2px;
+    width: 1px;
+    height: 50%;
+}
+
+/* Customers */
+.Customers-info h2{
+    font-size: 7rem;
+    margin: 0;
+}
+.Customers-item{
+    width: 100%;
+    left: 55%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+.Customers-card{
+    width: 40%;
+}
+.arrow svg{
+    padding: 10px 5px;
+    background-color: #d3d3d3;
+}
+@media (max-width:992px){
+    .Customers-item{
+        left: 50%;
+        position: relative;
+    }
+    .Customers-card{
+        width: 100%;
+    }
+    .arrow{
+        justify-content: center;
+    }
+}
+
+/* Newsletter */
+.Newsletter-info{
+    width: 50%;
+}
+.Newsletter form{
+    display: flex;
+    width: 50%;
+    bottom: -20px;
+}
+.Newsletter input{
+    width: 80%;
+    outline: none;
+    border: 5px solid white;
+    border-right: none;
+    padding: 5px 10px;
+    background-color: white;
+    color: gray;
+}
+.Newsletter button{
+    width: 20%;
+    outline: none;
+    border: 5px solid white;
+    border-left: none;
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+@media (max-width:992px){
+    .Newsletter-info{
+        width: 100%;
+    }
+    .Newsletter form{
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+/* footer */
+footer li,
+footer a{
+    list-style: none;
+    color: #959595;
+    text-decoration: none;
+    padding: 5px 0;
+}
+.socail svg{
+    background-color: #474747;
+    padding: 5px;
+}
